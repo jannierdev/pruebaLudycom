@@ -1,0 +1,23 @@
+<br>
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5>Usuarios</h5>
+
+        <button class="btn btn-primary" (click)="open(content); edit = false;">Crear usuario</button>
+    </div>
+
+    <div class="card-body">
+        <app-table [dataRows]="dataRows" [dataColumns]="dataColumns" [buttonsTable]="buttonsTable"></app-table>
+    </div>
+
+    <!-- Formulario -->
+    <ng-template #content let-modal>
+        <div class="modal-header">
+            {{edit ? 'Actualizar' : 'Crear'}} usuario
+        </div>
+        <div class="modal-body">
+            <app-form [fields]="dataFields" (reloadTable)="reloadData($event)" [edit]="edit" [data]="data"></app-form>
+        </div>
+    </ng-template>
+
+</div>

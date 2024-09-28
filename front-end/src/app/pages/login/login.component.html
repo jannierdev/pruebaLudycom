@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="container vh-100 m-auto d-flex justify-content-center align-items-center">
+        <form class="shadow-sm p-3 mb-5 bg-body rounded form-size" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <h5 class="text-center">Iniciar Sesión</h5>
+
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <div class="form-group">
+                    <label>Usuario</label>
+                    <input type="text" class="form-control" placeholder="Usuario" formControlName="numeroDocumento">
+                </div>
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña" formControlName="contrasena">
+                </div>
+                <button class="btn btn-primary mt-4">Ingresar</button>
+            </div>
+        </form>
+    </div>
+</div>

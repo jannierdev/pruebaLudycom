@@ -1,0 +1,26 @@
+.table-responsive {
+    overflow: auto !important;
+}
+
+.table-responsive table thead {
+    position: sticky;
+    top: 0;
+    z-index: 111;
+    background: #f5f5f5;
+}
+
+.background {
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 0px !important;
+}
+
+.semaforo-rojo {
+    background: #e86a6a;
+    color: #fff;
+}
+
+.semaforo-verde {
+    background: #30e577;
+}

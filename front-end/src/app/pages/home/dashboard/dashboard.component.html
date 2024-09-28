@@ -1,0 +1,21 @@
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <app-chart [data]="totalUsuarios" [type]="'column'"
+            [title]="'Total de usuarios(Activos/Inactivos)'"></app-chart>
+    </div>
+
+    <div class="col-md-6">
+        <app-chart [data]="totalAreas" [type]="'column'" [title]="'Total de areas(Activos/Inactivos)'"></app-chart>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <app-chart [data]="totalUsuarioxArea" [type]="'column'" [title]="'Total de usuarios x area'"></app-chart>
+    </div>
+
+    <div class="col-md-6">
+        <app-table></app-table>
+    </div>
+</div>
