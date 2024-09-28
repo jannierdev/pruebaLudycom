@@ -4,7 +4,7 @@
 Instalamos dependencias
 
 ```bash
-  cd api-rest/server && npm install
+  git clone https://github.com/jannierdev/pruebaLudycom.git
 ```
 
 Corremos el nodemon
